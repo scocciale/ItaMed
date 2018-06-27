@@ -1,0 +1,60 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	template="/templates/layoutContent.xhtml">
+
+	<ui:define name="content">
+		<div>
+			<h2 style="padding-top: 3%; padding-bottom: 1%; text-align: center">
+				<p:outputLabel value="Login" style="font-size: 0.60em!important;" />
+				<i class="fa fa-user-o" aria-hidden="true"
+					style="margin-right: 10px !important; font-size: 0.60em !important; opacity: 0.5"></i>
+			</h2>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<p:panel style="width: 50%; margin: auto;">
+					<br />
+					<div class="row colore-blu">
+						<div class="col s6 offset-s3">
+							<div class="row">
+								<div class="input-field">
+									<h:inputText id="userId" styleClass="validate" value=""></h:inputText>
+									<label class="left-align" for="userId"><h:outputText
+											value="Username" /></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field">
+									<h:inputSecret id="psw" styleClass="validate" value="">
+									</h:inputSecret>
+									<label for="psw" id="labelPsw"> <h:outputText
+											value="Password" />
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<p class="right-align">
+									<p:commandButton value="Entra"
+										styleClass="width-100 colore-blu" update="contForm:messages">
+									</p:commandButton>
+								</p>
+							</div>
+						</div>
+					</div>
+				</p:panel>
+
+
+				<div class="row"
+					style="width: 50%; margin: auto; padding-top: 2%; text-align: center; font-size: 0.2em;">
+					<label id="versioneApp"> <h:outputText value="v. 0.0" /></label>
+				</div>
+			</div>
+		</div>
+
+	</ui:define>
+</ui:composition>

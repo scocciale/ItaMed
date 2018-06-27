@@ -1,0 +1,9 @@
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+*.class
+*.jsfdia
+ItaMed-Data/.*
+ItaMed-Ejb/.*
+ItaMed-Ear/.*
+ItaMed-Web/.*
